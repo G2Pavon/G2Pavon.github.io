@@ -84,21 +84,20 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
 
 ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
-Extra: 
+
+- Add textures
+  
+  Go to Entity tab, select wad key, then press `+` below Wad files, select your .wad and then set absolute path
+  
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d)
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
+
 
 - Enable cstrike mod
   
 This allows you to see Counter-Strike models as entities instead of Half-Life models.
 
 ![Screenshot from 2024-06-21 18-13-20](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/8447d1cf-d8af-4990-b477-5aa110636494)
-
-- Add textures
-  
-  Go to Entity tab, select wad key, then press `+` below Wad files, select your .wad and then set absolute path
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d)
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
-
-
 
 
 
@@ -111,37 +110,38 @@ Now TrenchBroom is ready, but you still need to configure the compile tools. It'
 
 ### Configure Compile Tools
 
-1. Go to `Run > Compile Map…` You will see a compile window with empty compilation profiles.
+1. Go to `Run > Compile Map…`, you will see a compile window with empty compilation profiles.
 
 ![Screenshot from 2024-06-21 18-18-33](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bd94ea12-ca7d-4cde-83d9-76b26c652062)
 
    
-3. Set a new profile. Press `+ ` to add a new profile. Add a custom name and `${GAME_DIR_PATH}/cstrike/maps` as Working Directory
+2. Set a new profile. Press `+ ` to add a new profile. Add a custom name and
+    `${GAME_DIR_PATH}/cstrike/maps` as Working Directory
 
 ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/d6945617-5518-4df5-8586-9c31514af8cd)
 
 
 
    
-5. Add the following compilation tasks (1 Export task and 4 Run Tool tasks):
+3. Add the following compilation tasks (1 Export task and 4 Run Tool tasks):
 
-1. **Export Map**
+ **Export Map**
    - File Path: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map`
    - This exports the map to the cstrike maps directory (working directory). If you want you can add a second Export task for backup purposes with a different file path
 
-2. **Run Tool**
+ **Run Tool**
    - Tool Path: `Mapping/tools/hlcsg_x64.exe`
    - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -nowadtextures`
 
-3. **Run Tool**
+ **Run Tool**
    - Tool Path: `Mapping/tools/hlbsp_x64.exe`
    - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map"`
 
-4. **Run Tool**
+ **Run Tool**
    - Tool Path: `Mapping/tools/hlvis_x64.exe`
    - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -full`
 
-5. **Run Tool**
+ **Run Tool**
    - Tool Path: `Mapping/tools/hlrad_x64.exe`
    - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -extra -bounce 4`
 
