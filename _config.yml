@@ -10,7 +10,8 @@ github_username: "githubuser"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+#theme: "minima"
+remote_theme: jekyll/minima
 
 minima:
   skin: dark
