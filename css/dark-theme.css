@@ -1,0 +1,13 @@
+/* dark-theme.css */
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    color: #bb86fc;
+}
+
+.header, .footer {
+    background-color: #1f1f1f;
+}
