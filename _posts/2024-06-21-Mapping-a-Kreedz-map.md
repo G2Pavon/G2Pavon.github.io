@@ -10,7 +10,7 @@ You only need two tools, yes only two things:
 
 ### Why TrenchBroom Instead of Valve Hammer Editor or J.A.C.K.?
 
-While traditional editors like VHE and J.A.C.K. have their merits—indeed, 99.9% of KZ maps have been made with them and they are excellent tools—I've found TrenchBroom significantly enhances map creation workflow. Seeing Quake mappers creating outstanding maps with TrenchBroom highlights its capabilities. They achieve levels that often surpass those in the GoldSrc community, thanks in part to TrenchBroom. Its 3D-focused workflow and modern interface, similar to Blender, allows for an intuitive and natural approach to designing Kreedz maps, since KZ is about three-dimensional spatial movement. Working in a 3D view is more friendly for new mappers. It's worth mentioning that TrenchBroom also supports 2D views, which I primarily use for precise vertex editing, especially when working with small grids.
+While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 99.9% of KZ maps have been created with them and they are excellent tools), TrenchBroom has a 3D-centered workflow and a modern interface. It allows for an intuitive and natural approach to designing Kreedz maps, as KZ is all about three-dimensional spatial movement, and that’s why I think it is more user-friendly for new mappers. It’s worth mentioning that TrenchBroom also supports 2D views, which I personally only use for precise vertex editing, especially when working with small grids.
 
 #### The Only Four Drawbacks of TrenchBroom Compared to J.A.C.K:
 
@@ -84,13 +84,28 @@ While traditional editors like VHE and J.A.C.K. have their merits—indeed, 99.9
 
 ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
-Recommended: Enable cstrike mod
+Extra: 
+
+- Enable cstrike mod
+  
 This allows you to see Counter-Strike models as entities instead of Half-Life models.
 
 ![Screenshot from 2024-06-21 18-13-20](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/8447d1cf-d8af-4990-b477-5aa110636494)
 
+- Add textures
+  
+  Go to Entity tab, select wad key, then press `+` below Wad files, select your .wad and then set absolute path
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d)
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
+
+
+
+
+
 ----
-Now TrenchBroom is ready for KZ mapping, but you still need to configure the compile tools. It's easy, let's see:
+
+
+Now TrenchBroom is ready, but you still need to configure the compile tools. It's easy, let's see:
 
 ----
 
