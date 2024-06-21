@@ -76,6 +76,7 @@ While traditional editors like VHE and J.A.C.K. have their merits—indeed, 99.9
 
 ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
 
+---
 
 
 5. **Open TrenchBroom:**
@@ -83,9 +84,7 @@ While traditional editors like VHE and J.A.C.K. have their merits—indeed, 99.9
 
 ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
-
-### Recommended: Enable CS Mod
-
+Recommended: Enable cstrike mod
 This allows you to see Counter-Strike models as entities instead of Half-Life models.
 
 ![Screenshot from 2024-06-21 18-13-20](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/8447d1cf-d8af-4990-b477-5aa110636494)
@@ -98,14 +97,22 @@ Now TrenchBroom is ready for KZ mapping, but you still need to configure the com
 ### Configure Compile Tools
 
 1. Go to `Run > Compile Map…` You will see a compile window with empty compilation profiles.
-2. Set a new profile.
-3. Add the following compilation tasks (1 Export task and 4 Run Tool tasks):
 
-#### Compilation Tasks:
+![Screenshot from 2024-06-21 18-18-33](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bd94ea12-ca7d-4cde-83d9-76b26c652062)
+
+   
+3. Set a new profile. Press `+ ` to add a new profile. Add a custom name and `${GAME_DIR_PATH}/cstrike/maps` as Working Directory
+
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/d6945617-5518-4df5-8586-9c31514af8cd)
+
+
+
+   
+5. Add the following compilation tasks (1 Export task and 4 Run Tool tasks):
 
 1. **Export Map**
    - File Path: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map`
-   - This exports the map to the cstrike maps directory (working directory).
+   - This exports the map to the cstrike maps directory (working directory). If you want you can add a second Export task for backup purposes with a different file path
 
 2. **Run Tool**
    - Tool Path: `Mapping/tools/hlcsg_x64.exe`
@@ -122,6 +129,9 @@ Now TrenchBroom is ready for KZ mapping, but you still need to configure the com
 5. **Run Tool**
    - Tool Path: `Mapping/tools/hlrad_x64.exe`
    - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -extra -bounce 4`
+
+![Screenshot from 2024-06-21 18-52-06](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/609928b3-55bf-48ef-833a-faf6be3ad969)
+
 
 Now TrenchBroom is finally ready for KZ mapping. From now on, all you need to do is put your ideas into practice and let your imagination soar. Create whatever you want—no one will stop you. Want to make a map with only 257 LJ blocks? Go for it. Want to create a bhop map? Do it. Want to design a map with edge bugs? Go ahead. Want to make a death map with a neon style? Maybe reconsider that one—there are already plenty of ugly neon maps out there. Happy mapping!
 
