@@ -1,4 +1,4 @@
-# How to Create a Kreedz Map
+![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692)# How to Create a Kreedz Map
 
 
 You need two tools, yes, just two!:
@@ -76,8 +76,6 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 
        
    - Enable cstrike mod:
-     - This allows you to see Counter-Strike models as entities instead of Half-Life models.
-       
        
        ![Screenshot from 2024-06-21 18-13-20](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/8447d1cf-d8af-4990-b477-5aa110636494)
 
@@ -123,11 +121,11 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 ---
 
-Now TrenchBroom is finally ready for KZ mapping. From now on you will only have to put your ideas into practice and let your imagination fly. Do what you want, no one will stop you. Do you want to make a map with only 257 LJ blocks? Do it. Do you want to create a Bhop map? Do it. Do you want to make a map with only edgebugs? Do it. Do you want to make a neon style death map? Don't do it, there are already plenty of ugly neon maps out there. Happy mapping!
+Now TrenchBroom is finally ready for KZ mapping. From now on you will only have to put your ideas into practice and let your imagination fly. Do what you want, no one will stop you. Do you want to make a map with only 257 LJ blocks? Do it. Do you want to create a Bhop map? Do it. Do you want to make a map with only edgebugs? Do it. Do you want to make a neon style death map? Don't do it, there are already plenty of ugly neon maps out there. GL & HF!
 
 ---
 
-Too lazy for creating a map? Don't worry there is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Replace wads with your absolute wad paths. Finally add the block for jumps!. 
+Too lazy for creating a map? Don't worry there is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Replace wads with your absolute wad paths. Finally add the block for jumps!
 ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/39002baf-2339-4d22-93f5-4a3e8a4f16ac)
 
 ```
