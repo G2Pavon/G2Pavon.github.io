@@ -1,4 +1,4 @@
-## How to Create a Kreedz Map
+# How to Create a Kreedz Map
 
 
 You only need two tools, yes, only two things:
@@ -15,20 +15,21 @@ Counter-Strike 1.6.
   - [Download for Windows](https://github.com/twhl-community/VHLT-V34/releases)
   - [Download for Linux (requires GitHub account)](https://github.com/khanghugo/SDHLT/actions/runs/8559616842)
 
-### Why TrenchBroom Instead of Valve Hammer Editor or J.A.C.K.?
+## Why TrenchBroom Instead of Valve Hammer Editor or J.A.C.K.?
 ![grids2](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/adff44ce-edac-4484-9379-a61bb89d58a9)
 
 We know that traditional editors like ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bb8f90f4-2733-4556-8367-501092a801e8) VHE and ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/24a58390-3f4b-43b0-9188-ec4ce9f8504c) J.A.C.K.
 are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps have been created with them). However, they have outdated interfaces and limit the brush creation to 2D views. In contrast, <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> TrenchBroom is designed primarily to use the 3D viewport for brush creation. That allows for an intuitive and natural approach to designing Kreedz maps since KZ is all about movement in 3D space. This makes it easier for new mappers to use. It's also worth mentioning that TrenchBroom supports 2D views.
 
-#### The Only Four Drawbacks of TrenchBroom Compared to J.A.C.K:
+##### The Only Four Drawbacks of TrenchBroom Compared to J.A.C.K:
 
 - The texturing tool isn’t easy to use; there are no buttons to ‘justify texture’ like adjusting the texture to the face.
 - It doesn't have a file browser to conveniently pick a sprite or model; you have to type paths manually in the cycler_sprite/env_sprite key value.
-- Skyboxes cannot be previewed.
-- Decals do not have transparency.
+- Skybox cannot be rendered.
+- Decals do not render with transparency.
 
-### How to Start
+## How to Start
+
 
 1. **Extract TrenchBroom and Compile Tools into a Folder:**
    - From the VHLT zip, only extract the `tools` folder.
@@ -36,6 +37,7 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
    - For the Ubuntu version, it is automatically installed in `usr/share/TrenchBroom`.
           ![Screenshot from 2024-06-21 18-26-57](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/87a30114-a0fe-4b9e-b7aa-6558ca4484fb)
 
+## Setup Editor
 
 2. **Launch TrenchBroom:**
    - Click `New Map...` and then `Open preferences...`
@@ -84,7 +86,7 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 ---
 
-### Configure Compile Tools
+## Setup Compile Tools
 
 1. Go to `Run > Compile Map…`, you will see a compile window with empty compilation profiles.
    ![Screenshot from 2024-06-21 18-18-33](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bd94ea12-ca7d-4cde-83d9-76b26c652062)
@@ -117,8 +119,11 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
      
 ![Screenshot from 2024-06-21 18-52-06](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/609928b3-55bf-48ef-833a-faf6be3ad969)
 
+---
 
 Now TrenchBroom is finally ready for KZ mapping. From now on, all you need to do is put your ideas into practice and let your imagination soar. Create whatever you want—no one will stop you. Want to make a map with only 257 LJ blocks? Go for it. Want to create a bhop map? Do it. Want to design a map with edge bugs? Go ahead. Want to make a death map with a neon style? Maybe reconsider that one—there are already plenty of ugly neon maps out there. Happy mapping!
+
+---
 
 ### Recommended Resources
 
