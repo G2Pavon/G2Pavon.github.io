@@ -116,5 +116,5 @@ Now TrenchBroom is finally ready for KZ mapping. From now on, all you need to do
 
 - [The TrenchBroom Manual](https://trenchbroom.github.io/manual/latest/)
 - [TrenchBroom Video Tutorials by dumptruck_ds](https://www.youtube.com/watch?v=gONePWocbqA&list=PLgDKRPte5Y0AZ_K_PZbWbgBAEt5xf74aE)
-- [TWHL: The largest website related to GoldSrc]([https://twhl.info/](https://twhl.info/wiki))
-- [Xtreme-Jumps.eu Mapping Discord]([https://discord.gg/kreedz](https://discord.com/invite/AkggjC8PhF))
+- [TWHL: The largest website related to GoldSrc](https://twhl.info/wiki)
+- [Xtreme-Jumps.eu Mapping Discord](https://discord.com/invite/AkggjC8PhF)
