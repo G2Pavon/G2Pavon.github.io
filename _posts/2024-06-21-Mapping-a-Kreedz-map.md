@@ -1,5 +1,8 @@
 ## How to Create a Kreedz Map
 
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/97b7d9fa-fa0d-45cb-a839-9abb2c4efe11)
+
+
 You only need two tools, yes, only two things:
 
 - <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> **TrenchBroom**
