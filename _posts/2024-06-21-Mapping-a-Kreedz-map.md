@@ -21,7 +21,7 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
 
 ### How to Start
 
-1. **Extract TrenchBroom and Compile Tools in the Same Folder:**
+1. **Extract TrenchBroom and Compile Tools in the a Folder:**
    - From the VHLT zip, only extract the `tools` folder.
    - Example: `Mapping/tools`, `Mapping/TrenchBroom`.
    - For the Ubuntu version, it is automatically installed in `usr/share/TrenchBroom`.
@@ -35,39 +35,38 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
      
      ![Screenshot from 2024-06-21 17-32-02](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/14db38f9-2dfc-4f45-8584-2bed76f3ecc0)
 
-   - Select `Half-Life (experimental)`. Set the Game Path to where hl.exe is located. Click `Apply` and `OK`.
+   - Select `Half-Life (experimental)`. Set the **Game Path** to where hl.exe is located. Click `Apply` and `OK`.
      
      ![Screenshot from 2024-06-21 17-36-47](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b88f69e4-f825-4994-a51c-99a97c0f803f)
 
+6. **Add the Compile Tools FGD to TrenchBroom Configs:**
 
-4. **Add the Compile Tools FGD to TrenchBroom Configs:**
    - Go to the folder where TrenchBroom.exe is located, then go to `Games > Halflife`.
-  
   ![Screenshot from 2024-06-21 17-46-00](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/a1e9ea57-7912-401c-8968-dd5f8331ec54)
   ![Screenshot from 2024-06-21 17-46-16](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/54da83ff-8993-4814-91ad-02b75a4d5cc1)
-
-
-
+  
    - Copy `zhlt.fgd` from `Mapping/tools` and paste it here.
-
+     
   ![Screenshot from 2024-06-21 17-49-27](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/99e2b7d1-880a-4ebb-8218-6831c07d6bef)
 
+   - Create a new file and rename it as `combined.fgd`.
      
-   - Create a new plain-text file with a text editor and rename it as `combined.fgd`.
-
   ![Screenshot from 2024-06-21 17-52-57](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/81570051-848e-453b-854a-ae607f8f655b)
-
+  
      
    - Open `combined.fgd` with the text editor and add this:
+     
      ```plaintext
      @include "HalfLife.fgd"
      @include "zhlt.fgd"
      ```
-
+  
   ![Screenshot from 2024-06-21 17-54-35](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/23614cab-4116-4b9f-9dc6-a1f1b4382357)
-
+  
      
+
    - Save the file.
+
 
 5. **Configure GameConfig.cfg:**
 
@@ -77,22 +76,20 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
   
   ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
 
-
-
 6. **Finally Open TrenchBroom:**
    - Press `New map`, select `Half-Life`, and press `OK`.
 
 ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
 
-  - Add textures
+   - Add textures
   
   Go to Entity tab, select wad key, then press `+` below Wad files, select your .wad and then set absolute path
-  
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d) ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d) 
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
 
 
-  - Enable cstrike mod
+   - Enable cstrike mod
   
 This allows you to see Counter-Strike models as entities instead of Half-Life models.
 
@@ -101,11 +98,11 @@ This allows you to see Counter-Strike models as entities instead of Half-Life mo
 
 
 ----
+----
 
 
 
-
-Now TrenchBroom is ready, but you still need to configure the compile tools. It's easy, let's see:
+TrenchBroom is ready, but you still need to configure the compile tools. It's easy, let's see:
 
 ----
 
