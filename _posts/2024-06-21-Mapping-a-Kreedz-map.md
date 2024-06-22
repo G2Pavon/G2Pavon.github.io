@@ -58,11 +58,10 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
      ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
    - Add textures:
-     - Go to the Entity tab, select the `wad` key, then press `+` below Wad files, select your .wad file and set the absolute path.
+     - Go to the Entity tab, select the `wad` key, then press `+` below **Wad Files**, select  `zhlt.wad` from `Mapping/tools` and set the absolute path. Also add some wads from `cstrike` or `valve` folder.
        
-       ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d)
-       
-       ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/60f76284-c426-4727-88a3-dc31e697a397)
+
        
    - Enable cstrike mod:
      - This allows you to see Counter-Strike models as entities instead of Half-Life models.
