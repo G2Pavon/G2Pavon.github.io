@@ -23,12 +23,11 @@ Counter-Strike 1.6.
 We know that traditional editors like ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bb8f90f4-2733-4556-8367-501092a801e8) VHE and ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/24a58390-3f4b-43b0-9188-ec4ce9f8504c) J.A.C.K.
 are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps have been created with them). However, they have outdated interfaces and limit the brush creation to 2D views. In contrast, <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> TrenchBroom is designed primarily to use the 3D viewport for brush creation. That allows for an intuitive and natural approach to designing Kreedz maps since KZ is all about movement in 3D space. This makes it easier for new mappers to use. It's also worth mentioning that TrenchBroom supports 2D views.
 
-##### Four features that TrenchBroom lacks but that J.A.C.K has.
-
-- The texturing tool isn’t easy to use; there are no buttons to ‘justify texture’ like adjusting the texture to the face.
-- It doesn't have a file browser to conveniently pick a sprite or model; you have to type paths manually in the cycler_sprite/env_sprite key value.
-- Skybox cannot be rendered.
-- Decals do not render with transparency.
+> ##### Four features that TrenchBroom lacks.
+> - The texturing tool isn’t easy to use; there are no buttons to ‘justify texture’ like adjusting the texture to the face.
+> - It doesn't have a file browser to conveniently pick a sprite or model; you have to type paths manually in the cycler_sprite/env_sprite key value.
+> - Skybox cannot be rendered.
+> - Decals do not render with transparency.
 
 ---
 
@@ -128,7 +127,7 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 ---
 
-There is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the halflife.wad from `valve` folder. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
+There is a template of a room with the start and end button (timer digits are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the halflife.wad from `valve` folder. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
 
 ![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
 
@@ -330,9 +329,21 @@ There is a template of a room with the start and end button (timer digits are no
 }
 ```
 
+---
+
+> Each community has its own rules for submitting maps, be sure you follow them if you want your map to be accepted.
+
+<img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/0b27ca97-abf0-497e-b320-0ecd00a233ac" width="20" height="20"> [XJ Rules](https://xtreme-jumps.eu/upload-map)
+
+<img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b5dbf82d-7791-4f27-aca9-ddceaf978b8a" width="20" height="20"> [Cosy-Climbing Rules](https://cosy-climbing.net/map_suggest.php#rules)
+
+<img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/422e5229-7852-4b62-af7f-c26439da8715" width="20" height="20"> [KZ-Rush Rules](https://kz-rush.ru/en/article/rules-for-maps-with-rush-tag)
+
 ![image](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1600b235-52b6-479c-a468-d1d3197d2f0e/ddpcsvg-878bf78e-81e9-485c-8f9c-51d6ceac03b9.png/v1/fill/w_1600,h_900,q_80,strp/bhop_wallpaper__bhop_interloper_v1__by_nyu_one_ddpcsvg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMTYwMGIyMzUtNTJiNi00NzljLWE0NjgtZDFkMzE5N2QyZjBlXC9kZHBjc3ZnLTg3OGJmNzhlLTgxZTktNDg1Yy04ZjljLTUxZDZjZWFjMDNiOS5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.s16cMnii1FCKdxdLsmayGmYDpF9vFQSAM2jHLyxxLrA)
 
 ###### Image by [Nyu-One](https://www.deviantart.com/nyu-one) under [CC BY-NC-ND 3.0](https://creativecommons.org/licenses/by-nc-nd/3.0/)*
+
+---
 
 ### Recommended Resources
 
