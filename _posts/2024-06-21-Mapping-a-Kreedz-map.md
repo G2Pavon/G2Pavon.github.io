@@ -1,6 +1,7 @@
 ## How to Create a Kreedz Map
 
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/97b7d9fa-fa0d-45cb-a839-9abb2c4efe11)
+![grids](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/f4d1cd71-be5a-434f-82e1-19e0cab5d10f)
+
 
 
 You only need two tools, yes, only two things:
