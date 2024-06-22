@@ -126,6 +126,204 @@ Now TrenchBroom is finally ready for KZ mapping. From now on you will only have 
 
 ---
 
+Too lazy for creating a map? Don't worry there is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Replace wads with your absolute wad paths. Finally add the block for jumps!. 
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/39002baf-2339-4d22-93f5-4a3e8a4f16ac)
+
+```
+// Game: Half-Life
+// Format: Valve
+// entity 0
+{
+"mapversion" "220"
+"wad" "Mapping/tools/zhlt.wad;steam/steamapps/common/Half-Life/valve/halflife.wad"
+"classname" "worldspawn"
+"_tb_mod" "cstrike"
+// brush 0
+{
+( -960 -64 16 ) ( -960 64 -16 ) ( -960 64 16 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 -1024 16 ) ( -960 -1024 -16 ) ( -960 -1024 16 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 -64 ) ( -960 -64 -64 ) ( 960 -64 -64 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 64 0 ) ( -960 -64 0 ) ( -960 64 0 ) C1A3FLOOR02 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 896 16 ) ( -960 896 -16 ) ( 960 896 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 16 ) ( 960 -64 -16 ) ( 960 -64 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 1
+{
+( -1024 64 16 ) ( -1024 -64 16 ) ( -1024 -64 -16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1024 -1024 16 ) ( -2944 -1024 -16 ) ( -2944 -1024 16 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -1024 64 0 ) ( -2944 -64 0 ) ( -1024 -64 0 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1024 64 640 ) ( -2944 -64 640 ) ( -2944 64 640 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( -1024 896 16 ) ( -2944 896 -16 ) ( -1024 896 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -960 64 16 ) ( -960 -64 -16 ) ( -960 -64 16 ) OUT_WALL7F [ -2.220446049250313e-16 1 0 64 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 2
+{
+( -960 -64 16 ) ( -960 64 -16 ) ( -960 64 16 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 896 16 ) ( 960 896 -16 ) ( -960 896 -16 ) OUT_WALL7F [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 0 ) ( -960 -64 0 ) ( 960 -64 0 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 64 640 ) ( -960 -64 640 ) ( -960 64 640 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 960 16 ) ( -960 960 -16 ) ( 960 960 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 16 ) ( 960 -64 -16 ) ( 960 -64 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 3
+{
+( -960 -2048 16 ) ( -960 -1920 -16 ) ( -960 -1920 16 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 -1088 16 ) ( 960 -1088 -16 ) ( -960 -1088 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 -1920 0 ) ( -960 -2048 0 ) ( 960 -2048 0 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 -1920 640 ) ( -960 -2048 640 ) ( -960 -1920 640 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 -1024 16 ) ( -960 -1024 -16 ) ( 960 -1024 -16 ) OUT_WALL7F [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 -1920 16 ) ( 960 -2048 -16 ) ( 960 -2048 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 4
+{
+( -960 -64 720 ) ( -960 64 688 ) ( -960 64 720 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 -1024 720 ) ( -960 -1024 688 ) ( -960 -1024 720 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 640 ) ( -960 -64 640 ) ( 960 -64 640 ) LAB1_FLOOR4 [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 64 704 ) ( -960 -64 704 ) ( -960 64 704 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 896 720 ) ( -960 896 688 ) ( 960 896 688 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 720 ) ( 960 -64 688 ) ( 960 -64 720 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+// brush 5
+{
+( 960 64 16 ) ( 960 -64 16 ) ( 960 -64 -16 ) OUT_WALL7F [ -2.220446049250313e-16 -1 0 -64 ] [ 0 0 -1 0 ] 0 1 1
+( 960 -1024 16 ) ( -960 -1024 -16 ) ( -960 -1024 16 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 960 64 0 ) ( -960 -64 0 ) ( 960 -64 0 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 64 640 ) ( -960 -64 640 ) ( -960 64 640 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 960 896 16 ) ( -960 896 -16 ) ( 960 896 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 1024 64 16 ) ( 1024 -64 -16 ) ( 1024 -64 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 1
+{
+"classname" "info_player_start"
+"spawnflags" "0"
+"angles" "0 90 0"
+"origin" "0 688 36"
+}
+// entity 2
+{
+"classname" "func_button"
+"speed" "5"
+"sounds" "0"
+"wait" "3"
+"delay" "0"
+"spawnflags" "1"
+"locked_sound" "0"
+"unlocked_sound" "0"
+"locked_sentence" "0"
+"unlocked_sentence" "0"
+"rendermode" "0"
+"rendercolor" "0 0 0"
+"renderfx" "0"
+"angles" "0 0 0"
+"zhlt_lightflags" "0"
+"targetname" "counter_start_button"
+"master" "power"
+"target" "counter_start"
+// brush 0
+{
+( -16 832 0 ) ( -16 833 0 ) ( -16 832 1 ) BLACK [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -32 864 0 ) ( -32 864 1 ) ( -31 864 0 ) BLACK [ -1 -2.220446049250313e-16 0 16 ] [ -4.930380657631324e-32 2.7755575615628914e-16 1 0 ] 0 1 1
+( -16 864 32 ) ( -16 880 64 ) ( 112 880 64 ) +0BUTTON3 [ 1 0 0 -16 ] [ 0 -0.447213595499958 -0.894427190999916 2.7913208 ] 0 1 1
+( -32 832 0 ) ( -31 832 0 ) ( -32 833 0 ) LAB1_FLOOR4 [ -1 0 0 32 ] [ 0 -1 0 0 ] 0 1 1
+( 32 896 64 ) ( 32 897 64 ) ( 33 896 64 ) BLACK [ 0 -1 0 0 ] [ -1 0 -2.220446049250313e-16 16 ] 0 1 1
+( 32 896 64 ) ( 33 896 64 ) ( 32 896 65 ) LAB1_FLOOR4 [ -1 0 0 32 ] [ 0 0 -1 0 ] 0 1 1
+( 16 896 64 ) ( 16 896 65 ) ( 16 897 64 ) BLACK [ 0 -1 0 0 ] [ -2.7755575615628914e-16 0 1 0 ] 0 1 1
+}
+}
+// entity 3
+{
+"classname" "func_button"
+"speed" "5"
+"sounds" "0"
+"wait" "3"
+"delay" "0"
+"spawnflags" "1"
+"locked_sound" "0"
+"unlocked_sound" "0"
+"locked_sentence" "0"
+"unlocked_sentence" "0"
+"rendermode" "0"
+"rendercolor" "0 0 0"
+"renderfx" "0"
+"angles" "0 0 0"
+"zhlt_lightflags" "0"
+"targetname" "counter_stop_button"
+"master" "stopsource"
+"target" "counter_off"
+// brush 0
+{
+( -16 -1024 64 ) ( -16 -1024 65 ) ( -16 -1025 64 ) BLACK [ 1.2246467991473532e-16 1 0 0 ] [ 2.7755575615628914e-16 -3.399077683617228e-32 1 0 ] 180 1 1
+( -32 -1024 64 ) ( -33 -1024 64 ) ( -32 -1024 65 ) LAB1_FLOOR4 [ 1 -1.2246467991473532e-16 0 32 ] [ 0 0 -1 0 ] 180 1 1
+( 32 -960 0 ) ( 31 -960 0 ) ( 32 -961 0 ) LAB1_FLOOR4 [ 1 -1.2246467991473532e-16 0 32 ] [ 1.2246467991473532e-16 1 0 32 ] 180 1 1
+( -32 -1024 64 ) ( -32 -1025 64 ) ( -33 -1024 64 ) BLACK [ 1.2246467991473532e-16 1 0 0 ] [ 1 -1.2246467991473532e-16 -2.220446049250313e-16 16 ] 180 1 1
+( 16 -992 32 ) ( 16 -1008 64 ) ( -112 -1008 64 ) +0BUTTON2 [ -1 1.2246467991473532e-16 0 -16 ] [ 5.476786982642027e-17 0.447213595499958 -0.894427190999916 28.034607 ] 180 1 1
+( 32 -992 0 ) ( 32 -992 1 ) ( 31 -992 0 ) BLACK [ 1 9.957992501029599e-17 0 16 ] [ 1.531302974014096e-32 -2.7755575615628914e-16 1 0 ] 180 1 1
+( 16 -960 0 ) ( 16 -961 0 ) ( 16 -960 1 ) BLACK [ 1.2246467991473532e-16 1 0 0 ] [ 0 0 -1 0 ] 180 1 1
+}
+}
+// entity 4
+{
+"classname" "light"
+"spawnflags" "0"
+"_light" "255 255 128 200"
+"style" "0"
+"_fade" "1.0"
+"_falloff" "0"
+"origin" "8 760 152"
+}
+// entity 5
+{
+"classname" "light"
+"spawnflags" "0"
+"_light" "255 255 128 200"
+"style" "0"
+"_fade" "1.0"
+"_falloff" "0"
+"origin" "8 456 152"
+}
+// entity 6
+{
+"classname" "light"
+"spawnflags" "0"
+"_light" "255 255 128 200"
+"style" "0"
+"_fade" "1.0"
+"_falloff" "0"
+"origin" "8 104 152"
+}
+// entity 7
+{
+"classname" "light"
+"spawnflags" "0"
+"_light" "255 255 128 200"
+"style" "0"
+"_fade" "1.0"
+"_falloff" "0"
+"origin" "8 -232 152"
+}
+// entity 8
+{
+"classname" "light"
+"spawnflags" "0"
+"_light" "255 255 128 200"
+"style" "0"
+"_fade" "1.0"
+"_falloff" "0"
+"origin" "8 -616 152"
+}
+// entity 9
+{
+"classname" "light"
+"spawnflags" "0"
+"_light" "255 255 128 200"
+"style" "0"
+"_fade" "1.0"
+"_falloff" "0"
+"origin" "8 -920 152"
+}
+```
+
 ### Recommended Resources
 
 - [The TrenchBroom Manual](https://trenchbroom.github.io/manual/latest/)
@@ -133,3 +331,4 @@ Now TrenchBroom is finally ready for KZ mapping. From now on you will only have 
 - [Bal's TrenchBroom Tips & Tricks](https://www.slipseer.com/index.php?threads/bals-quake-mapping-tips-tricks.100/)
 - [TWHL: The largest website related to GoldSrc](https://twhl.info/wiki)
 - [Xtreme-Jumps.eu Mapping Discord](https://discord.com/invite/AkggjC8PhF)
+- [Advanced VHLT compilation parameters & tips](https://archive.svencoop.com.br/web/svencoop/20230220030651/https://sites.google.com/site/svenmanor/tutorials/advancedlight)
