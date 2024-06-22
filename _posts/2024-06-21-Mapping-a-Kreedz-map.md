@@ -42,20 +42,20 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
 
 4. **Add the Compile Tools FGD to TrenchBroom Configs:**
    - Go to the folder where TrenchBroom.exe is located, then go to `Games > Halflife`.
-
-![Screenshot from 2024-06-21 17-46-00](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/a1e9ea57-7912-401c-8968-dd5f8331ec54)
-![Screenshot from 2024-06-21 17-46-16](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/54da83ff-8993-4814-91ad-02b75a4d5cc1)
+  
+  ![Screenshot from 2024-06-21 17-46-00](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/a1e9ea57-7912-401c-8968-dd5f8331ec54)
+  ![Screenshot from 2024-06-21 17-46-16](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/54da83ff-8993-4814-91ad-02b75a4d5cc1)
 
 
 
    - Copy `zhlt.fgd` from `Mapping/tools` and paste it here.
 
-![Screenshot from 2024-06-21 17-49-27](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/99e2b7d1-880a-4ebb-8218-6831c07d6bef)
+  ![Screenshot from 2024-06-21 17-49-27](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/99e2b7d1-880a-4ebb-8218-6831c07d6bef)
 
      
    - Create a new plain-text file with a text editor and rename it as `combined.fgd`.
 
-![Screenshot from 2024-06-21 17-52-57](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/81570051-848e-453b-854a-ae607f8f655b)
+  ![Screenshot from 2024-06-21 17-52-57](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/81570051-848e-453b-854a-ae607f8f655b)
 
      
    - Open `combined.fgd` with the text editor and add this:
@@ -64,17 +64,18 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
      @include "zhlt.fgd"
      ```
 
-![Screenshot from 2024-06-21 17-54-35](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/23614cab-4116-4b9f-9dc6-a1f1b4382357)
+  ![Screenshot from 2024-06-21 17-54-35](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/23614cab-4116-4b9f-9dc6-a1f1b4382357)
 
      
    - Save the file.
 
 5. **Configure GameConfig.cfg:**
+
    - Open `GameConfig.cfg`, go to line 18, and replace “HalfLife.fgd” with “combined.fgd”.
 
-![Screenshot from 2024-06-21 17-58-16](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/df84df2b-bc0b-4d5b-9aa4-710e1a4b8eab)
-
-![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
+  ![Screenshot from 2024-06-21 17-58-16](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/df84df2b-bc0b-4d5b-9aa4-710e1a4b8eab)
+  
+  ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
 
 
 
@@ -88,8 +89,7 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
   
   Go to Entity tab, select wad key, then press `+` below Wad files, select your .wad and then set absolute path
   
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d)
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7eaa0d06-f920-47c7-81bb-7e68eaf0cb7d) ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
 
 
   - Enable cstrike mod
