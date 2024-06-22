@@ -69,23 +69,22 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
      
    - Save the file.
 
-4. **Configure GameConfig.cfg:**
+5. **Configure GameConfig.cfg:**
    - Open `GameConfig.cfg`, go to line 18, and replace “HalfLife.fgd” with “combined.fgd”.
 
 ![Screenshot from 2024-06-21 17-58-16](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/df84df2b-bc0b-4d5b-9aa4-710e1a4b8eab)
 
 ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
 
----
 
 
-5. **Open TrenchBroom:**
+6. **Finally Open TrenchBroom:**
    - Press `New map`, select `Half-Life`, and press `OK`.
 
 ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
 
-- Add textures
+  - Add textures
   
   Go to Entity tab, select wad key, then press `+` below Wad files, select your .wad and then set absolute path
   
@@ -93,7 +92,7 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
 ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/abf30f40-43b4-4fd9-97d9-5c4b531ea5af)
 
 
-- Enable cstrike mod
+  - Enable cstrike mod
   
 This allows you to see Counter-Strike models as entities instead of Half-Life models.
 
@@ -102,6 +101,8 @@ This allows you to see Counter-Strike models as entities instead of Half-Life mo
 
 
 ----
+
+
 
 
 Now TrenchBroom is ready, but you still need to configure the compile tools. It's easy, let's see:
