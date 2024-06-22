@@ -2,16 +2,22 @@
 
 You only need two tools, yes, only two things:
 
-- **TrenchBroom**: A modern level editor originally designed for Quake, but it also supports Goldsrc engine games like Counter-Strike 1.6.
+- <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> **TrenchBroom**
+: A modern level editor originally designed for  ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7f2552fd-cfb4-4eb9-a6df-99f9b3551c06)
+Quake, but it also supports  ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/90c0f277-55c9-45f0-af03-461b193ab42f)
+Goldsrc engine games like  ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/c82b9b35-de85-4bdf-8d85-957300d59a19)
+Counter-Strike 1.6.
   - [Download TrenchBroom](https://github.com/TrenchBroom/TrenchBroom/releases)
   
-- **Map compile tools**: These tools convert the .map file created with TrenchBroom to a .bsp file, which Counter-Strike uses for maps.
+- ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b347db29-a32e-43a9-a55e-7398bd4e99ab) **Map compile tools** 
+: These tools convert the .map file created with TrenchBroom to a .bsp file, which Counter-Strike uses for maps.
   - [Download for Windows](https://github.com/twhl-community/VHLT-V34/releases)
   - [Download for Linux (requires GitHub account)](https://github.com/khanghugo/SDHLT/actions/runs/8559616842)
 
 ### Why TrenchBroom Instead of Valve Hammer Editor or J.A.C.K.?
 
-While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 99.9% of KZ maps have been created with them and they are excellent tools), TrenchBroom has a 3D-centered workflow and a modern interface. It allows for an intuitive and natural approach to designing Kreedz maps, as KZ is all about three-dimensional spatial movement. That’s why I think it is more user-friendly for new mappers. It’s worth mentioning that TrenchBroom also supports 2D views, which I personally only use for precise vertex editing, especially when working with small grids.
+We know that traditional editors like ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bb8f90f4-2733-4556-8367-501092a801e8) VHE and ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/24a58390-3f4b-43b0-9188-ec4ce9f8504c) J.A.C.K.
+are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps have been created with them). However, they have outdated interfaces and limit the brush creation to 2D views. In contrast, <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> TrenchBroom is designed primarily to use the 3D viewport for brush creation. That allows for an intuitive and natural approach to designing Kreedz maps since KZ is all about movement in 3D space. This makes it easier for new mappers to use. It's also worth mentioning that TrenchBroom supports 2D views.
 
 #### The Only Four Drawbacks of TrenchBroom Compared to J.A.C.K:
 
@@ -60,7 +66,7 @@ While traditional editors like VHE and J.A.C.K. have their advantages (in fact, 
    - Add textures:
      - Go to the Entity tab, select the `wad` key, then press `+` below **Wad Files**, select  `zhlt.wad` from `Mapping/tools` and set the absolute path. Also add some wads from `cstrike` or `valve` folder.
        
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/60f76284-c426-4727-88a3-dc31e697a397)
+       ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/60f76284-c426-4727-88a3-dc31e697a397)
 
        
    - Enable cstrike mod:
