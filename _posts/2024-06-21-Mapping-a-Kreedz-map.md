@@ -1,4 +1,3 @@
-![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692)# How to Create a Kreedz Map
 
 
 You need two tools, yes, just two!:
@@ -125,7 +124,11 @@ Now TrenchBroom is finally ready for KZ mapping. From now on you will only have 
 
 ---
 
-Too lazy for creating a map? Don't worry there is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Replace wads with your absolute wad paths. Finally add the block for jumps!
+Too lazy for creating a map? Don't worry there is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Replace wads with your absolute wad paths. Finally add the block for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, with the created block you can modify the dimensions extruding the faces holding `SHIFT` and select the face to extrude.
+
+![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
+
+
 ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/39002baf-2339-4d22-93f5-4a3e8a4f16ac)
 
 ```
