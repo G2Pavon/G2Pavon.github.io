@@ -1,7 +1,7 @@
 # How to Create a Kreedz Map
 
 
-You only need two tools, yes, only two things:
+You need two tools, yes, just two!:
 
 - <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> **TrenchBroom** :
 A modern level editor originally designed for  ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/7f2552fd-cfb4-4eb9-a6df-99f9b3551c06)
@@ -28,10 +28,11 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 - Skybox cannot be rendered.
 - Decals do not render with transparency.
 
+---
+
 ## How to Start
 
-
-1. **Extract TrenchBroom and Compile Tools into a Folder:**
+**Extract TrenchBroom and Compile Tools into a Folder:**
    - From the VHLT zip, only extract the `tools` folder.
    - Example: `Mapping/tools`, `Mapping/TrenchBroom`.
    - For the Ubuntu version, it is automatically installed in `usr/share/TrenchBroom`.
@@ -39,7 +40,7 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 
 ## Setup Editor
 
-2. **Launch TrenchBroom:**
+1. **Launch TrenchBroom:**
    - Click `New Map...` and then `Open preferences...`
           ![Screenshot from 2024-06-21 17-32-02](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/14db38f9-2dfc-4f45-8584-2bed76f3ecc0)
 
@@ -48,7 +49,7 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 
 
 
-4. **Add the Compile Tools FGD to TrenchBroom Game Config:**
+2. **Add the Compile Tools FGD to TrenchBroom Game Config:**
    - Copy `zhlt.fgd` from `Mapping/tools` and paste in `Mapping/Trenchbroom/Games/Halflife`
    - Create a new file and rename it as `combined.fgd`.
    - Open `combined.fgd` with a text editor and write this:
@@ -63,7 +64,7 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
        ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
 
 
-5. **Finally Open TrenchBroom:**
+3. **Finally Open TrenchBroom:**
    - Press `New map...`, select `Half-Life`, and press `OK`.
      ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
@@ -121,7 +122,7 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 ---
 
-Now TrenchBroom is finally ready for KZ mapping. From now on, all you need to do is put your ideas into practice and let your imagination soar. Create whatever you want—no one will stop you. Want to make a map with only 257 LJ blocks? Go for it. Want to create a bhop map? Do it. Want to design a map with edge bugs? Go ahead. Want to make a death map with a neon style? Maybe reconsider that one—there are already plenty of ugly neon maps out there. Happy mapping!
+Now TrenchBroom is finally ready for KZ mapping. From now on you will only have to put your ideas into practice and let your imagination fly. Do what you want, no one will stop you. Do you want to make a map with only 257 LJ blocks? Do it. Do you want to create a Bhop map? Do it. Do you want to make a map with only edgebugs? Do it. Do you want to make a neon style death map? Don't do it, there are already plenty of ugly neon maps out there. Happy mapping!
 
 ---
 
@@ -129,5 +130,6 @@ Now TrenchBroom is finally ready for KZ mapping. From now on, all you need to do
 
 - [The TrenchBroom Manual](https://trenchbroom.github.io/manual/latest/)
 - [TrenchBroom Video Tutorials by dumptruck_ds](https://www.youtube.com/watch?v=gONePWocbqA&list=PLgDKRPte5Y0AZ_K_PZbWbgBAEt5xf74aE)
+- [Bal's TrenchBroom Tips & Tricks](https://www.slipseer.com/index.php?threads/bals-quake-mapping-tips-tricks.100/)
 - [TWHL: The largest website related to GoldSrc](https://twhl.info/wiki)
 - [Xtreme-Jumps.eu Mapping Discord](https://discord.com/invite/AkggjC8PhF)
