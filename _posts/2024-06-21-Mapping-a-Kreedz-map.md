@@ -21,7 +21,7 @@ Counter-Strike 1.6.
 We know that traditional editors like ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bb8f90f4-2733-4556-8367-501092a801e8) VHE and ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/24a58390-3f4b-43b0-9188-ec4ce9f8504c) J.A.C.K.
 are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps have been created with them). However, they have outdated interfaces and limit the brush creation to 2D views. In contrast, <img src="https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/68e0fc81-9178-4291-96ac-8503d747331e" width="18" height="18"> TrenchBroom is designed primarily to use the 3D viewport for brush creation. That allows for an intuitive and natural approach to designing Kreedz maps since KZ is all about movement in 3D space. This makes it easier for new mappers to use. It's also worth mentioning that TrenchBroom supports 2D views.
 
-##### The Only Four Drawbacks of TrenchBroom Compared to J.A.C.K:
+##### Four features that TrenchBroom lacks but that J.A.C.K has.
 
 - The texturing tool isn’t easy to use; there are no buttons to ‘justify texture’ like adjusting the texture to the face.
 - It doesn't have a file browser to conveniently pick a sprite or model; you have to type paths manually in the cycler_sprite/env_sprite key value.
@@ -58,7 +58,8 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
      @include "zhlt.fgd"
      ```
    - Save the file.
-       ![Screenshot from 2024-06-21 17-52-57](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/81570051-848e-453b-854a-ae607f8f655b)
+       ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/90207e2a-dde5-43a2-841e-bac549d71c9d)
+
   
    - Open `GameConfig.cfg`, go to line 18, and replace “HalfLife.fgd” with “combined.fgd”.
        ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
