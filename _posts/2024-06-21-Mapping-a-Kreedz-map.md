@@ -119,12 +119,13 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 ![Screenshot from 2024-06-21 18-52-06](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/609928b3-55bf-48ef-833a-faf6be3ad969)
 
 ---
+## Now TrenchBroom is ready for KZ mapping.
 
-Now TrenchBroom is finally ready for KZ mapping. From now on you will only have to put your ideas into practice and let your imagination fly. Do what you want, no one will stop you. Do you want to make a map with only 257 LJ blocks? Do it. Do you want to create a Bhop map? Do it. Do you want to make a map with only edgebugs? Do it. Do you want to make a neon style death map? Don't do it, there are already plenty of ugly neon maps out there. GL & HF!
+ From now on you will only have to put your ideas into practice and let your imagination fly. Do what you want, no one will stop you. Do you want to make a map with only 257 LJ blocks? Do it. Do you want to create a Bhop map? Do it. Do you want to make a map with only edgebugs? Do it. Do you want to make a neon style death map? Don't do it, there are already plenty of ugly neon maps out there. GL & HF!
 
 ---
 
-Too lazy for creating a map? Don't worry there is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Replace wads with your absolute wad paths. Finally add the block for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, with the created block you can modify the dimensions extruding the faces holding `SHIFT` and select the face to extrude.
+There is a template of a room with the start and end button (timer digits are not necessary as kz plugins is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the halflife.wad from `valve` folder. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
 
 ![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
 
@@ -137,7 +138,7 @@ Too lazy for creating a map? Don't worry there is a template of a room with the 
 // entity 0
 {
 "mapversion" "220"
-"wad" "Mapping/tools/zhlt.wad;steam/steamapps/common/Half-Life/valve/halflife.wad"
+"wad" "steam/steamapps/common/Half-Life/valve/halflife.wad"
 "classname" "worldspawn"
 "_tb_mod" "cstrike"
 // brush 0
