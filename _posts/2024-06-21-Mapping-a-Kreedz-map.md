@@ -28,6 +28,12 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 > - It doesn't have a file browser to conveniently pick a sprite or model; you have to type paths manually in the cycler_sprite/env_sprite key value.
 > - Skybox cannot be rendered.
 > - Decals do not render with transparency.
+---
+
+#### Here is a YouTube video showing the making of a kz map
+
+[![Trenchbroom showcase](http://img.youtube.com/vi/fnUfOF2Vjxw/0.jpg)](
+https://www.youtube.com/watch?v=fnUfOF2Vjxw)
 
 ---
 
@@ -127,7 +133,7 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 ---
 
-There is a template of a room with the start and end button (timer digits are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the halflife.wad from `valve` folder. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
+There is a template of a room with the start and end button (timer digits are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used, all you need is two [func_button](https://twhl.info/wiki/page/func_button) with *counter_start* and *counter_off* as target). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the *halflife.wad* from `Half-Life/valve/`. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
 
 ![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
 
@@ -135,15 +141,12 @@ There is a template of a room with the start and end button (timer digits are no
 ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/39002baf-2339-4d22-93f5-4a3e8a4f16ac)
 
 ```
-// Game: Half-Life
-// Format: Valve
-// entity 0
 {
 "mapversion" "220"
-"wad" "steam/steamapps/common/Half-Life/valve/halflife.wad"
+"wad" "/steam/steamapps/common/Half-Life/valve/halflife.wad"
 "classname" "worldspawn"
 "_tb_mod" "cstrike"
-// brush 0
+
 {
 ( -960 -64 16 ) ( -960 64 -16 ) ( -960 64 16 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 -1024 16 ) ( -960 -1024 -16 ) ( -960 -1024 16 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -152,7 +155,7 @@ There is a template of a room with the start and end button (timer digits are no
 ( 960 896 16 ) ( -960 896 -16 ) ( 960 896 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 64 16 ) ( 960 -64 -16 ) ( 960 -64 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
-// brush 1
+
 {
 ( -1024 64 16 ) ( -1024 -64 16 ) ( -1024 -64 -16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -1024 -1024 16 ) ( -2944 -1024 -16 ) ( -2944 -1024 16 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -161,7 +164,7 @@ There is a template of a room with the start and end button (timer digits are no
 ( -1024 896 16 ) ( -2944 896 -16 ) ( -1024 896 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -960 64 16 ) ( -960 -64 -16 ) ( -960 -64 16 ) OUT_WALL7F [ -2.220446049250313e-16 1 0 64 ] [ 0 0 -1 0 ] 0 1 1
 }
-// brush 2
+
 {
 ( -960 -64 16 ) ( -960 64 -16 ) ( -960 64 16 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 896 16 ) ( 960 896 -16 ) ( -960 896 -16 ) OUT_WALL7F [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -170,7 +173,7 @@ There is a template of a room with the start and end button (timer digits are no
 ( 960 960 16 ) ( -960 960 -16 ) ( 960 960 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 64 16 ) ( 960 -64 -16 ) ( 960 -64 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
-// brush 3
+
 {
 ( -960 -2048 16 ) ( -960 -1920 -16 ) ( -960 -1920 16 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 -1088 16 ) ( 960 -1088 -16 ) ( -960 -1088 -16 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -179,7 +182,7 @@ There is a template of a room with the start and end button (timer digits are no
 ( 960 -1024 16 ) ( -960 -1024 -16 ) ( 960 -1024 -16 ) OUT_WALL7F [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 -1920 16 ) ( 960 -2048 -16 ) ( 960 -2048 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
-// brush 4
+
 {
 ( -960 -64 720 ) ( -960 64 688 ) ( -960 64 720 ) FIFTIES_WALL14V [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 -1024 720 ) ( -960 -1024 688 ) ( -960 -1024 720 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -188,7 +191,7 @@ There is a template of a room with the start and end button (timer digits are no
 ( 960 896 720 ) ( -960 896 688 ) ( 960 896 688 ) FIFTIES_WALL14V [ -1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 64 720 ) ( 960 -64 688 ) ( 960 -64 720 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
-// brush 5
+
 {
 ( 960 64 16 ) ( 960 -64 16 ) ( 960 -64 -16 ) OUT_WALL7F [ -2.220446049250313e-16 -1 0 -64 ] [ 0 0 -1 0 ] 0 1 1
 ( 960 -1024 16 ) ( -960 -1024 -16 ) ( -960 -1024 16 ) FIFTIES_WALL14V [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1
@@ -198,34 +201,14 @@ There is a template of a room with the start and end button (timer digits are no
 ( 1024 64 16 ) ( 1024 -64 -16 ) ( 1024 -64 16 ) FIFTIES_WALL14V [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }
-// entity 1
-{
-"classname" "info_player_start"
-"spawnflags" "0"
-"angles" "0 90 0"
-"origin" "0 688 36"
-}
-// entity 2
+
 {
 "classname" "func_button"
 "speed" "5"
-"sounds" "0"
 "wait" "3"
 "delay" "0"
 "spawnflags" "1"
-"locked_sound" "0"
-"unlocked_sound" "0"
-"locked_sentence" "0"
-"unlocked_sentence" "0"
-"rendermode" "0"
-"rendercolor" "0 0 0"
-"renderfx" "0"
-"angles" "0 0 0"
-"zhlt_lightflags" "0"
-"targetname" "counter_start_button"
-"master" "power"
 "target" "counter_start"
-// brush 0
 {
 ( -16 832 0 ) ( -16 833 0 ) ( -16 832 1 ) BLACK [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 ( -32 864 0 ) ( -32 864 1 ) ( -31 864 0 ) BLACK [ -1 -2.220446049250313e-16 0 16 ] [ -4.930380657631324e-32 2.7755575615628914e-16 1 0 ] 0 1 1
@@ -236,27 +219,14 @@ There is a template of a room with the start and end button (timer digits are no
 ( 16 896 64 ) ( 16 896 65 ) ( 16 897 64 ) BLACK [ 0 -1 0 0 ] [ -2.7755575615628914e-16 0 1 0 ] 0 1 1
 }
 }
-// entity 3
+
 {
 "classname" "func_button"
 "speed" "5"
-"sounds" "0"
 "wait" "3"
 "delay" "0"
 "spawnflags" "1"
-"locked_sound" "0"
-"unlocked_sound" "0"
-"locked_sentence" "0"
-"unlocked_sentence" "0"
-"rendermode" "0"
-"rendercolor" "0 0 0"
-"renderfx" "0"
-"angles" "0 0 0"
-"zhlt_lightflags" "0"
-"targetname" "counter_stop_button"
-"master" "stopsource"
 "target" "counter_off"
-// brush 0
 {
 ( -16 -1024 64 ) ( -16 -1024 65 ) ( -16 -1025 64 ) BLACK [ 1.2246467991473532e-16 1 0 0 ] [ 2.7755575615628914e-16 -3.399077683617228e-32 1 0 ] 180 1 1
 ( -32 -1024 64 ) ( -33 -1024 64 ) ( -32 -1024 65 ) LAB1_FLOOR4 [ 1 -1.2246467991473532e-16 0 32 ] [ 0 0 -1 0 ] 180 1 1
@@ -267,7 +237,14 @@ There is a template of a room with the start and end button (timer digits are no
 ( 16 -960 0 ) ( 16 -961 0 ) ( 16 -960 1 ) BLACK [ 1.2246467991473532e-16 1 0 0 ] [ 0 0 -1 0 ] 180 1 1
 }
 }
-// entity 4
+
+{
+"classname" "info_player_start"
+"spawnflags" "0"
+"angles" "0 90 0"
+"origin" "0 688 36"
+}
+
 {
 "classname" "light"
 "spawnflags" "0"
@@ -277,7 +254,7 @@ There is a template of a room with the start and end button (timer digits are no
 "_falloff" "0"
 "origin" "8 760 152"
 }
-// entity 5
+
 {
 "classname" "light"
 "spawnflags" "0"
@@ -287,7 +264,7 @@ There is a template of a room with the start and end button (timer digits are no
 "_falloff" "0"
 "origin" "8 456 152"
 }
-// entity 6
+
 {
 "classname" "light"
 "spawnflags" "0"
@@ -297,7 +274,7 @@ There is a template of a room with the start and end button (timer digits are no
 "_falloff" "0"
 "origin" "8 104 152"
 }
-// entity 7
+
 {
 "classname" "light"
 "spawnflags" "0"
@@ -307,7 +284,7 @@ There is a template of a room with the start and end button (timer digits are no
 "_falloff" "0"
 "origin" "8 -232 152"
 }
-// entity 8
+
 {
 "classname" "light"
 "spawnflags" "0"
@@ -317,7 +294,7 @@ There is a template of a room with the start and end button (timer digits are no
 "_falloff" "0"
 "origin" "8 -616 152"
 }
-// entity 9
+
 {
 "classname" "light"
 "spawnflags" "0"
@@ -327,6 +304,7 @@ There is a template of a room with the start and end button (timer digits are no
 "_falloff" "0"
 "origin" "8 -920 152"
 }
+
 ```
 
 ---
