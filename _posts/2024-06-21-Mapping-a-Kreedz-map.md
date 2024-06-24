@@ -128,12 +128,10 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 ---
 
-There is a template of a room with the start and end button (timer digits are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used, all you need is two [func_button](https://twhl.info/wiki/page/func_button) with *counter_start* and *counter_off* as target). Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the *halflife.wad* from `Half-Life/valve/`. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
-
-  ![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
+There is a template of a room with the start and end button (timers are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used, all you need is two [func_button](https://twhl.info/wiki/page/func_button) with *counter_start* and *counter_off* as target. Anyway, if you want you can download the timers from [here](https://github.com/G2Pavon/timercounter) ).
 
 
-![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/912d678d-9a9c-4820-9865-48c4f5ee709d)
+Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the *halflife.wad* from `Half-Life/valve/`. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
 
 
 ```
@@ -255,6 +253,13 @@ There is a template of a room with the start and end button (timer digits are no
 }
 
 ```
+  ![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
+
+
+![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/912d678d-9a9c-4820-9865-48c4f5ee709d)
+
+
+
 
 ---
 
