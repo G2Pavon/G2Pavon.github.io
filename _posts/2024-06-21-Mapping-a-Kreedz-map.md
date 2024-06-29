@@ -258,7 +258,9 @@ Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `
 
 ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/912d678d-9a9c-4820-9865-48c4f5ee709d)
 
+##### Player dimensions [units]: duck & stand
 
+![player_stand](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/c0deeab0-531d-4e14-816d-c0f07fbd059e)
 
 
 ---
