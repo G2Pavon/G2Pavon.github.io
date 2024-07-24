@@ -14,8 +14,8 @@ Counter-Strike 1.6.
   
 - ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b347db29-a32e-43a9-a55e-7398bd4e99ab) **Map compile tools** :
   These tools convert the .map file created with TrenchBroom to a .bsp file, which Counter-Strike uses for maps.
-  - [Download for Windows](https://github.com/twhl-community/VHLT-V34/releases)
-  - [Download for Linux (requires GitHub account)](https://github.com/khanghugo/SDHLT/actions/runs/8559616842)
+  - [Download for Windows](https://github.com/seedee/SDHLT/releases)
+  - [Download for Linux (requires GitHub account)](https://github.com/seedee/SDHLT/actions?query=is%3Acompleted)
 
 ## Why TrenchBroom Instead of Valve Hammer Editor or J.A.C.K.?
 ![grids2](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/adff44ce-edac-4484-9379-a61bb89d58a9)
@@ -44,7 +44,8 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 
 1. **Launch TrenchBroom:**
    - Click `New Map...` and then `Open preferences...`
-          ![Screenshot from 2024-06-21 17-32-02](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/14db38f9-2dfc-4f45-8584-2bed76f3ecc0)
+          ![image](https://github.com/user-attachments/assets/6321b3ee-5c65-444e-a6e8-29df204e1058)
+           ![Screenshot from 2024-06-21 17-32-02](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/14db38f9-2dfc-4f45-8584-2bed76f3ecc0)
 
    - Select `Half-Life (experimental)`. Set the **Game Path** to where hl.exe is located. Click `Apply` and `OK`.
           ![Screenshot from 2024-06-21 17-36-47](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b88f69e4-f825-4994-a51c-99a97c0f803f)
