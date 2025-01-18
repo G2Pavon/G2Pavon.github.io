@@ -37,7 +37,7 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 **Extract TrenchBroom and Compile Tools into a Folder:**
    - From the VHLT zip, only extract the `tools` folder.
    - Example: `Mapping/tools`, `Mapping/TrenchBroom`.
-   > LINUX USER: Since TrenchBroom 2024.2 only is release as Appimage, you will have to do an extra step in "Add the Compile Tools FGD to TrenchBroom Game Config:"
+   > Linux user: Since V2024.2 TrenchBroom is release as Appimage, you will have to do an extra step in "Add the Compile Tools FGD to TrenchBroom Game Config" step.
 
 ![Screenshot from 2025-01-18 09-18-17](https://github.com/user-attachments/assets/07098a8b-0d1f-41c8-b5fe-f58f5d95b2ca)
 
@@ -48,7 +48,7 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 ## Setup Editor
 
 1. **Launch TrenchBroom:**
-   > LINUX user: set permission to "Executable as a program"
+   > Linux user: set permission to "Executable as a program"
 
    - Click `New Map...` and then `Open preferences...`
 ![image](https://github.com/user-attachments/assets/ddb99612-1ecd-4eb4-b117-8824dfb22fff)
@@ -64,18 +64,19 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 
 
 
-3. **Add the Compile Tools FGD to TrenchBroom Game Config:**
+3. **Add Compile Tools FGD to TrenchBroom Game Config:**
 
-   > LINUX user: you have to do an extra step. Download [`app/resources/games`](https://github.com/TrenchBroom/TrenchBroom/tree/master/app/resources/games) folder from TB github repository and extract them in `~/.TrenchBroom/` aka `Home/.Trenchbroom/`. ![image](https://github.com/user-attachments/assets/626ab476-b78b-4252-8b47-56f8cc228f00) actually only need Halflife folder, but in case you ever want to mapping in other games...
+   > Linux user: you have to do an extra step. Download [`app/resources/games`](https://github.com/TrenchBroom/TrenchBroom/tree/master/app/resources/games) folder from TB github repository and extract them in `~/.TrenchBroom/` aka `Home/.Trenchbroom/`. ![image](https://github.com/user-attachments/assets/626ab476-b78b-4252-8b47-56f8cc228f00) actually only need Halflife folder, but in case you ever want to mapping for other games...
 
 
 
-   - Copy `sdhlt.fgd` from `Mapping/tools` and paste in `Mapping/Trenchbroom/Games/Halflife` (`Home/.Trenchbroom/games/Halflife` in linux)
+   - Copy `sdhlt.fgd` from `Mapping/tools` and paste in `Mapping/Trenchbroom/Games/Halflife`
+     >Linux user: in `Home/.Trenchbroom/Games/Halflife`
    - Create a new text file in `games/Halflife` and rename it as `combined.fgd`.
    - Open `combined.fgd` with a text editor and write this:
      ```plaintext
      @include "HalfLife.fgd"
-     @include "zhlt.fgd"
+     @include "sdhlt.fgd"
      ```
    - Save file.
        ![image](https://github.com/user-attachments/assets/7a9a7eaa-62af-4536-8932-f949ef72203b)
@@ -83,7 +84,8 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 
 
   
-   - Open `GameConfig.cfg`, go to line 21, and replace `"definitions": [ "HalfLife.fgd" ]` with `"definitions": [ "combined.fgd" ]`.
+   - Open `GameConfig.cfg`, go to line 21, and replace
+ `"definitions": [ "HalfLife.fgd" ]` with `"definitions": [ "combined.fgd" ]`.
        ![image](https://github.com/user-attachments/assets/9d07fe0e-a190-4d23-8d18-fa1a539db5e8)
 
 
