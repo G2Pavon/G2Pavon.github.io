@@ -10,7 +10,7 @@ A modern level editor originally designed for  ![image](https://github.com/G2Pav
 Quake, but it also supports  ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/90c0f277-55c9-45f0-af03-461b193ab42f)
 Goldsrc engine games like  ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/c82b9b35-de85-4bdf-8d85-957300d59a19)
 Counter-Strike 1.6.
-  - [Download TrenchBroom](https://github.com/TrenchBroom/TrenchBroom/releases)
+  - [Download TrenchBroom](https://github.com/TrenchBroom/TrenchBroom/releases/latest)
   
 - ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b347db29-a32e-43a9-a55e-7398bd4e99ab) **Map compile tools** :
   These tools convert the .map file created with TrenchBroom to a .bsp file, which Counter-Strike uses for maps.
