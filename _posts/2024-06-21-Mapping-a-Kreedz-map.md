@@ -15,7 +15,7 @@ Counter-Strike 1.6.
 - ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b347db29-a32e-43a9-a55e-7398bd4e99ab) **Map compile tools** :
   These tools convert the .map file created with TrenchBroom to a .bsp file, which Counter-Strike uses for maps.
   - [Download for Windows](https://github.com/seedee/SDHLT/releases)
-  - [Download for Linux (requires GitHub account)](https://github.com/seedee/SDHLT/actions?query=is%3Acompleted)
+  - [Download for Linux (from Actions which requires GitHub account)](https://github.com/szGabu/SDHLT_Linux/actions/runs/12523659422)
 
 ## Why TrenchBroom Instead of Valve Hammer Editor or J.A.C.K.?
 ![grids2](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/adff44ce-edac-4484-9379-a61bb89d58a9)
@@ -37,50 +37,74 @@ are the most recommended and widely used for mapping (in fact, 99.9% of KZ maps 
 **Extract TrenchBroom and Compile Tools into a Folder:**
    - From the VHLT zip, only extract the `tools` folder.
    - Example: `Mapping/tools`, `Mapping/TrenchBroom`.
-   - For the Ubuntu version, it is automatically installed in `usr/share/TrenchBroom`.
-          ![Screenshot from 2024-06-21 18-26-57](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/87a30114-a0fe-4b9e-b7aa-6558ca4484fb)
+   > LINUX USER: Since TrenchBroom 2024.2 only is release as Appimage, you will have to do an extra step in "Add the Compile Tools FGD to TrenchBroom Game Config:"
+
+![Screenshot from 2025-01-18 09-18-17](https://github.com/user-attachments/assets/07098a8b-0d1f-41c8-b5fe-f58f5d95b2ca)
+
+|tools|trenchbroom|
+|------------|--------|
+|       ![Screenshot from 2025-01-18 09-20-07](https://github.com/user-attachments/assets/01fff485-aa40-444b-abe2-92c0af53ec9c) |![image](https://github.com/user-attachments/assets/01609ce7-8057-402b-8dbf-123a07a9a717) |
 
 ## Setup Editor
 
 1. **Launch TrenchBroom:**
+   > LINUX user: set permission to "Executable as a program"
+
    - Click `New Map...` and then `Open preferences...`
-          ![image](https://github.com/user-attachments/assets/6321b3ee-5c65-444e-a6e8-29df204e1058)
-           ![Screenshot from 2024-06-21 17-32-02](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/14db38f9-2dfc-4f45-8584-2bed76f3ecc0)
-
-   - Select `Half-Life (experimental)`. Set the **Game Path** to where hl.exe is located. Click `Apply` and `OK`.
-          ![Screenshot from 2024-06-21 17-36-47](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/b88f69e4-f825-4994-a51c-99a97c0f803f)
+![image](https://github.com/user-attachments/assets/ddb99612-1ecd-4eb4-b117-8824dfb22fff)
 
 
+      ![image](https://github.com/user-attachments/assets/2287cdef-97dd-41a0-9b7b-72b1652328ca)
 
-2. **Add the Compile Tools FGD to TrenchBroom Game Config:**
-   - Copy `zhlt.fgd` from `Mapping/tools` and paste in `Mapping/Trenchbroom/Games/Halflife`
-   - Create a new file and rename it as `combined.fgd`.
+
+   - Select `Half-Life (experimental)`. Set the **Game Path** to half-life steamapps directory and also set map compiler tools  executables. Click `Apply` and `OK`.
+          ![image](https://github.com/user-attachments/assets/c840b743-ff76-4654-a16f-7ff46aa771fe)
+
+
+
+
+
+3. **Add the Compile Tools FGD to TrenchBroom Game Config:**
+
+   > LINUX user: you have to do an extra step. Download [`app/resources/games`](https://github.com/TrenchBroom/TrenchBroom/tree/master/app/resources/games) folder from TB github repository and extract them in `~/.TrenchBroom/` aka `Home/.Trenchbroom/`. ![image](https://github.com/user-attachments/assets/626ab476-b78b-4252-8b47-56f8cc228f00) actually only need Halflife folder, but in case you ever want to mapping in other games...
+
+
+
+   - Copy `sdhlt.fgd` from `Mapping/tools` and paste in `Mapping/Trenchbroom/Games/Halflife` (`Home/.Trenchbroom/games/Halflife` in linux)
+   - Create a new text file in `games/Halflife` and rename it as `combined.fgd`.
    - Open `combined.fgd` with a text editor and write this:
      ```plaintext
      @include "HalfLife.fgd"
      @include "zhlt.fgd"
      ```
-   - Save the file.
-       ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/90207e2a-dde5-43a2-841e-bac549d71c9d)
+   - Save file.
+       ![image](https://github.com/user-attachments/assets/7a9a7eaa-62af-4536-8932-f949ef72203b)
+
+
 
   
-   - Open `GameConfig.cfg`, go to line 18, and replace “HalfLife.fgd” with “combined.fgd”.
-       ![Screenshot from 2024-06-21 18-00-01](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/ec60d7c7-bc93-4bee-96b8-71ddeaf92a10)
+   - Open `GameConfig.cfg`, go to line 21, and replace `"definitions": [ "HalfLife.fgd" ]` with `"definitions": [ "combined.fgd" ]`.
+       ![image](https://github.com/user-attachments/assets/9d07fe0e-a190-4d23-8d18-fa1a539db5e8)
 
 
-3. **Finally Open TrenchBroom:**
-   - Press `New map...`, select `Half-Life`, and press `OK`.
-     ![Screenshot from 2024-06-21 18-10-41](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/65c3525f-21c7-4752-bad3-c9f4082581f5)
 
-   - Add textures:
-     - Go to the Entity tab, select the `wad` key, then press `+` below **Wad Files**, select  `zhlt.wad` from `Mapping/tools` and set the absolute path. Also add some wads from `cstrike` or `valve` folder.
+5. **Finally Open TrenchBroom:**
+   - Go to `Mapping/Trenchbroom/` and run it, then press `New map...`, select `Half-Life`, and press `OK`. ![image](https://github.com/user-attachments/assets/cde99950-129a-438f-9a7f-134720efb5e3)
+  
+     ![image](https://github.com/user-attachments/assets/1fb6c2ec-d213-479f-8489-99413252de65)
+
+  - Enable cstrike mod:
+      - Select `cstrike` and press `+`
+
+      ![image](https://github.com/user-attachments/assets/545fb637-f422-44c7-b59e-57b98a5f96c0)
+
+
+     
+  - Add textures:
+     - Go to the Entity tab in right panel (aka Entity Inspector), select worldspawn's `wad` key property, now below "Show default properties" a smart editor `Wad Files` is available, click `+` icon below **Wad Files** to add the wad files, select  `sdhlt.wad` from `Mapping/tools` and set absolute path type. Also add some wads from `cstrike` or `valve` folder.
        
-       ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/60f76284-c426-4727-88a3-dc31e697a397)
+      ![image](https://github.com/user-attachments/assets/d7886d9a-af01-418c-afa1-02a6570f622c)
 
-       
-   - Enable cstrike mod:
-       
-       ![Screenshot from 2024-06-21 18-13-20](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/8447d1cf-d8af-4990-b477-5aa110636494)
 
 
 ---
@@ -92,47 +116,51 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 ## Setup Compile Tools
 
 1. Go to `Run > Compile Map…`, you will see a compile window with empty compilation profiles.
-   ![Screenshot from 2024-06-21 18-18-33](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/bd94ea12-ca7d-4cde-83d9-76b26c652062)
-
-3. Set a new profile. Press `+` to add a new profile. Add a custom name and `${GAME_DIR_PATH}/cstrike/maps` as the Working Directory.
-   ![image](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/d6945617-5518-4df5-8586-9c31514af8cd)
+       ![image](https://github.com/user-attachments/assets/73ee5cc9-e3e5-4584-a600-7f25cf3370b1)
 
 
-5. Add the following compilation tasks (1 Export task and 4 Run Tool tasks):
+3. Set a new profile. Click `+` in left panel to add a new profile. Add a custom name and `${GAME_DIR_PATH}/cstrike/maps` as the Working Directory.
+   ![image](https://github.com/user-attachments/assets/705484e6-0ae9-45c0-a42a-49c8f490db2c)
+
+
+
+5. Now add the following compilation tasks (1 Export Map and 4 Run Tool which are executed sequentially):
 
 **Export Map**
    - File Path: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map`
-   - This exports the map to the cstrike maps directory (working directory). If you want, you can add a second Export task for backup purposes with a different file path.
+   - This exports .map file to cstrike maps directory (aka working directory). If you want, you can add a second export task for backup purposes to a different path.
 
 **Run Tool**
-   - Tool Path: `Mapping/tools/hlcsg_x64.exe`
-   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -nowadtextures`
+   - Tool Path: `${csg}`
+   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map -nowadtextures`
 
 **Run Tool**
-   - Tool Path: `Mapping/tools/hlbsp_x64.exe`
-   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map"`
+   - Tool Path: `${bsp}`
+   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map`
 
 **Run Tool**
-   - Tool Path: `Mapping/tools/hlvis_x64.exe`
-   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -full`
+   - Tool Path: `${vis}`
+   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map -full`
 
 **Run Tool**
-   - Tool Path: `Mapping/tools/hlrad_x64.exe`
-   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -extra -bounce 4`
+   - Tool Path: `${rad}` 
+   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map -extra -threads ${CPU_COUNT}`
      
-![Screenshot from 2024-06-21 18-52-06](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/609928b3-55bf-48ef-833a-faf6be3ad969)
+![image](https://github.com/user-attachments/assets/837b6cbe-cd73-4100-b06f-fa48767fb54a)
+
 
 ---
+
 ## Now TrenchBroom is ready for KZ mapping.
 
  From now on you will only have to put your ideas into practice and let your imagination fly. Do what you want, no one will stop you. Do you want to make a map with only 257 LJ blocks? Do it. Do you want to create a Bhop map? Do it. Do you want to make a map with only edgebugs? Do it. Do you want to make a neon style death map? Don't do it, there are already plenty of ugly neon maps out there. GL & HF!
 
 ---
 
-There is a template of a room with the start and end button (timers are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used, all you need is two [func_button](https://twhl.info/wiki/page/func_button) with *counter_start* and *counter_off* as target. Anyway, if you want you can download the timers from [here](https://github.com/G2Pavon/timercounter) ).
+There is a template of a room with the start and end button (timers are not necessary as [kz plugins](https://kz-rush.ru/downloads.php) is used, all you need is two func_button entities with *counter_start* and *counter_off* as target respectively. Anyway, if you want you can download timers from [here](https://github.com/G2Pavon/timercounter) ).
 
 
-Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `Ctrl + V`. Add the *halflife.wad* from `Half-Life/valve/`. Finally add the blocks for jumps!. Press ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) and just click & drag the blocks in the 3D View, then you can modify the dimensions extruding the faces holding `SHIFT` and selecting the face to extrude.
+Copy next map (in text format) to clipboard and paste in TrenchBroom `Ctrl + V`. Add *halflife.wad* from `Half-Life/valve/`:
 
 
 ```
@@ -254,6 +282,12 @@ Copy the next .map (in text format) to clipboard and paste them in TrenchBroom `
 }
 
 ```
+
+Finally add block for jumps!. How? click ![NoTool](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/6d3bac21-6381-478c-bb7e-f34a11f0e692) on Tool Bar and just click & drag the blocks in the 3D View, then select the brush and modify dimensions holding `SHIFT` and selecting the face to extrude. Also you can change grid size from Tool bar or with `+`/`-` keyboard buttons.
+
+![image](https://github.com/user-attachments/assets/f653e344-0e94-4625-ae72-b6bfe18ae8da)
+
+
   ![2024-06-2210-57-22-ezgif com-video-to-gif-converter](https://github.com/G2Pavon/G2Pavon.github.io/assets/14117486/9c602be1-8a39-4539-8468-2e315f3ab57e)
 
 
