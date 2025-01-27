@@ -134,20 +134,23 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
 
 **Run Tool**
    - Tool Path: `${csg}`
-   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map -nowadtextures`
+   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -nowadtextures`
 
 **Run Tool**
    - Tool Path: `${bsp}`
-   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map`
+   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map"`
 
 **Run Tool**
    - Tool Path: `${vis}`
-   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map -full`
+   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -full`
 
 **Run Tool**
    - Tool Path: `${rad}` 
-   - Parameters: `${WORK_DIR_PATH}/${MAP_BASE_NAME}.map -extra -threads ${CPU_COUNT}`
+   - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -extra -threads ${CPU_COUNT}`
      
+> Note: if your ${WORK_DIR_PATH} directory has whitespaces, example: `C:\Program Files\Steam\HalfLife\cstrike\maps`, then add quotation marks to .map parameter: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map"`.
+>This is not my case, so i did not add quotes.
+
 ![image](https://github.com/user-attachments/assets/837b6cbe-cd73-4100-b06f-fa48767fb54a)
 
 
