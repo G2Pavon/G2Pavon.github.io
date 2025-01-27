@@ -148,7 +148,8 @@ TrenchBroom is ready, but you still need to configure the compile tools. It's ea
    - Tool Path: `${rad}` 
    - Parameters: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map" -extra -threads ${CPU_COUNT}`
      
-> Note: if your ${WORK_DIR_PATH} directory has whitespaces, example: `C:\Program Files\Steam\HalfLife\cstrike\maps`, then add quotation marks to .map parameter: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map"`.
+> Note: if your ${WORK_DIR_PATH} directory has whitespaces,        
+>example: `C:\Program Files\Steam\HalfLife\cstrike\maps`, then add quotation marks to .map parameter: `"${WORK_DIR_PATH}/${MAP_BASE_NAME}.map"`.
 >This is not my case, so i did not add quotes.
 
 ![image](https://github.com/user-attachments/assets/837b6cbe-cd73-4100-b06f-fa48767fb54a)
